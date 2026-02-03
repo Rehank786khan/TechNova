@@ -365,8 +365,6 @@ body {
 
 
 
-
-
 /* ============================
    MOBILE RESPONSIVE FIXES
    ============================ */
@@ -378,6 +376,7 @@ body {
         align-items: center;
         gap: 10px;
         padding: 10px;
+        width: 100%;
     }
 
     .search-bar {
@@ -402,12 +401,16 @@ body {
 
     /* PRODUCT GRID FIX */
     .product-container {
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
+        width: 100% !important;
+        max-width: 100% !important;
         justify-content: center;
+        gap: 20px;
     }
 
     .product-card {
-        width: 90%;
+        width: 100% !important;
+        min-width: unset !important;
         height: auto;
     }
 
@@ -445,6 +448,7 @@ body {
     .footer {
         flex-direction: column;
         gap: 20px;
+        text-align: center;
     }
 
     .footer-left,
