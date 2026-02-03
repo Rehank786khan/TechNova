@@ -362,3 +362,94 @@ body {
     25%  { opacity: 0; }  
     100% { opacity: 0; }  
 }
+
+
+
+
+
+/* ============================
+   MOBILE RESPONSIVE FIXES
+   ============================ */
+@media (max-width: 768px) {
+
+    /* NAVBAR FIX */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .nav-links a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    /* SLIDER FIX */
+    .slider {
+        height: 35vh;
+    }
+
+    /* PRODUCT GRID FIX */
+    .product-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .product-specs {
+        height: auto;
+        opacity: 1;
+    }
+
+    /* WIDE CARD FIX */
+    .wide-card {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .wide-card-left,
+    .wide-card-right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .wide-specs ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* IMAGE FIX */
+    .slide-img {
+        padding: 10px;
+        object-fit: contain;
+    }
+
+    /* FOOTER FIX */
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        border: none;
+    }
+}
