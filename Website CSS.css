@@ -457,3 +457,18 @@ body {
         border: none;
     }
 }
+
+
+
+/* FIX PRODUCT IMAGES ON MOBILE */
+.hover-slider {
+    position: relative;
+}
+
+.slide-img {
+    position: relative;
+    opacity: 1 !important;
+    padding: 10px;
+    object-fit: contain;
+}
+
