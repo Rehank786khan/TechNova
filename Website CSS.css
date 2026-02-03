@@ -463,12 +463,17 @@ body {
 /* FIX PRODUCT IMAGES ON MOBILE */
 .hover-slider {
     position: relative;
+    height: auto;
 }
 
 .slide-img {
-    position: relative;
+    position: relative !important;
     opacity: 1 !important;
-    padding: 10px;
-    object-fit: contain;
+    padding: 10px !important;
+    object-fit: contain !important;
+    animation: none !important;
 }
 
+.wide-card:hover .slide-img {
+    animation: none !important;
+}
